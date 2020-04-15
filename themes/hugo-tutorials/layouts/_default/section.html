@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+
+{{ partial "topbar.html" . }}
+{{ partial "sidebar.html" . }}
+
+{{ range .Pages  }}
+  {{ .Title }}
+{{ end }}
+
+{{ partial "footer.html" . }}
